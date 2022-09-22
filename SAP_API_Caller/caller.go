@@ -85,58 +85,58 @@ func (c *SAPAPICaller) General(businessPartner string) {
 	generalData, err := c.callBPSupplierSrvAPIRequirementGeneral("A_BusinessPartner", businessPartner)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(generalData)
 	}
-	c.log.Info(generalData)
 
 	roleData, err := c.callToRole(generalData[0].ToRole)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(roleData)
 	}
-	c.log.Info(roleData)
 
 	addressData, err := c.callToAddress(generalData[0].ToAddress)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(addressData)
 	}
-	c.log.Info(addressData)
 
 	bankData, err := c.callToBank(generalData[0].ToBank)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(bankData)
 	}
-	c.log.Info(bankData)
 
 	supplierData, err := c.callToSupplier(generalData[0].ToSupplier)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(supplierData)
 	}
-	c.log.Info(supplierData)
 
 	purchasingOrganizationData, err := c.callToPurchasingOrganization(supplierData.ToPurchasingOrganization)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(purchasingOrganizationData)
 	}
-	c.log.Info(purchasingOrganizationData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(purchasingOrganizationData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 
 	companyData, err := c.callToCompany(supplierData.ToCompany)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(companyData)
 	}
-	c.log.Info(companyData)
 }
 
 func (c *SAPAPICaller) callBPSupplierSrvAPIRequirementGeneral(api, businessPartner string) ([]sap_api_output_formatter.General, error) {
@@ -379,30 +379,30 @@ func (c *SAPAPICaller) Supplier(supplier string) {
 
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(supplierData)
 	}
-	c.log.Info(supplierData)
 
 	purchasingOrganizationData, err := c.callToPurchasingOrganization(supplierData[0].ToPurchasingOrganization)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(purchasingOrganizationData)
 	}
-	c.log.Info(purchasingOrganizationData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(purchasingOrganizationData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 
 	companyData, err := c.callToCompany(supplierData[0].ToCompany)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(companyData)
 	}
-	c.log.Info(companyData)
 
 }
 
@@ -429,16 +429,16 @@ func (c *SAPAPICaller) PurchasingOrganization(supplier, purchasingOrganization s
 	purchasingOrganizationData, err := c.callBPSupplierSrvAPIRequirementPurchasingOrganization("A_SupplierPurchasingOrg", supplier, purchasingOrganization)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(purchasingOrganizationData)
 	}
-	c.log.Info(purchasingOrganizationData)
 
 	partnerFunctionData, err := c.callToPartnerFunction(purchasingOrganizationData[0].ToPartnerFunction)
 	if err != nil {
 		c.log.Error(err)
-		return
+	} else {
+		c.log.Info(partnerFunctionData)
 	}
-	c.log.Info(partnerFunctionData)
 }
 
 func (c *SAPAPICaller) callBPSupplierSrvAPIRequirementPurchasingOrganization(api, supplier, purchasingOrganization string) ([]sap_api_output_formatter.PurchasingOrganization, error) {

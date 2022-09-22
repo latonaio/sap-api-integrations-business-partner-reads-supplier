@@ -1,0 +1,24 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller/caller.go#L124",
+	"function": "sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller.(*SAPAPICaller).General",
+	"level": "INFO",
+	"message": [
+		{
+			"Supplier": "100000",
+			"PurchasingOrganization": "0001",
+			"IncotermsClassification": "",
+			"InvoiceIsGoodsReceiptBased": true,
+			"PaymentTerms": "0001",
+			"PurOrdAutoGenerationIsAllowed": true,
+			"PurchaseOrderCurrency": "EUR",
+			"PurchasingGroup": "001",
+			"ShippingCondition": "",
+			"SupplierPhoneNumber": "",
+			"SupplierRespSalesPersonName": "",
+			"PurchasingIsBlockedForSupplier": false,
+			"DeletionIndicator": false,
+			"to_PartnerFunction": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_SupplierPurchasingOrg(Supplier='100000',PurchasingOrganization='0001')/to_PartnerFunction"
+		}
+	],
+	"time": "2022-09-22T14:39:55+09:00"
+}

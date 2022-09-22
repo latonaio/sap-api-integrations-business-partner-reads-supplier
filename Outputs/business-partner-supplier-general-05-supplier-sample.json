@@ -1,0 +1,26 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller/caller.go#L117",
+	"function": "sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller.(*SAPAPICaller).General",
+	"level": "INFO",
+	"message": {
+		"Supplier": "100000",
+		"AuthorizationGroup": "",
+		"CreationDate": "2022-09-15",
+		"Customer": "",
+		"PaymentIsBlockedForSupplier": false,
+		"PostingIsBlocked": false,
+		"PurchasingIsBlocked": false,
+		"SupplierAccountGroup": "KRED",
+		"SupplierFullName": "御中 Test Suplier/99999 test",
+		"SupplierName": "Test Suplier",
+		"BirthDate": "",
+		"DeletionIndicator": false,
+		"Industry": "",
+		"IsNaturalPerson": "",
+		"SupplierCorporateGroup": "",
+		"SupplierProcurementBlock": "",
+		"to_SupplierPurchasingOrg": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_Supplier('100000')/to_SupplierPurchasingOrg",
+		"to_SupplierCompany": "http://100.21.57.120:8080/sap/opu/odata/sap/API_BUSINESS_PARTNER/A_Supplier('100000')/to_SupplierCompany"
+	},
+	"time": "2022-09-22T14:39:55+09:00"
+}
