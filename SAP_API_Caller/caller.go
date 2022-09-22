@@ -520,11 +520,11 @@ func (c *SAPAPICaller) getQueryWithBank(params map[string]string, businessPartne
 	return params
 }
 
-func (c *SAPAPICaller) getQueryWithBPName(params map[string]string, bPName string) map[string]string {
+func (c *SAPAPICaller) getQueryWithBPName(params map[string]string, businessPartnerName string) map[string]string {
 	if len(params) == 0 {
 		params = make(map[string]string, 1)
 	}
-	params["$filter"] = fmt.Sprintf("BPName eq '%s'", bPName)
+	params["$filter"] = fmt.Sprintf("substringof('%s', BusinessPartnerName)", businessPartnerName)
 	return params
 }
 

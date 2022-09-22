@@ -1,0 +1,20 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller/caller.go#L299",
+	"function": "sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller.(*SAPAPICaller).Address",
+	"level": "INFO",
+	"message": [
+		{
+			"BusinessPartner": "111",
+			"AddressID": "23648",
+			"ValidityStartDate": "2022-09-15",
+			"ValidityEndDate": "9999-12-31",
+			"Country": "DE",
+			"Region": "02",
+			"StreetName": "Test",
+			"CityName": "test",
+			"PostalCode": "99999",
+			"Language": "JA"
+		}
+	],
+	"time": "2022-09-22T17:26:40+09:00"
+}

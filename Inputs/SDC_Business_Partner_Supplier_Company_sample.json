@@ -4,9 +4,9 @@
 	"redis_key": "abcdefg",
 	"filepath": "/var/lib/aion/Data/rededge_sdc/abcdef.json",
 	"business_partner": {
-		"BusinessPartner": "1018",
+		"BusinessPartner": "111",
 		"Customer": "",
-		"Supplier": "1018",
+		"Supplier": "100000",
 		"AcademicTitle": "",
 		"AuthorizationGroup": "",
 		"BusinessPartnerCategory": "",
@@ -87,7 +87,7 @@
 			"AuthorizationGroup": ""
 		},
 		"SupplierData": {
-			"Supplier": "1018",
+			"Supplier": "100000",
 			"AuthorizationGroup": "",
 			"CreationDate": "",
 			"Customer": "",
@@ -128,7 +128,7 @@
 			}
 		},
 		"Company": {
-			"CompanyCode": "1710",
+			"CompanyCode": "0001",
 			"PaymentBlockingReason": "",
 			"PaymentMethodsList": "",
 			"PaymentTerms": "",
@@ -139,8 +139,8 @@
 			"DeletionIndicator": null
 		}
 	},
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerSupplierReads",
 	"accepter": ["Company"],
-	"business_partner_code": "1018",
+	"business_partner_code": "111",
 	"deleted": false
 }

@@ -1,0 +1,20 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller/caller.go#L404",
+	"function": "sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller.(*SAPAPICaller).Supplier",
+	"level": "INFO",
+	"message": [
+		{
+			"Supplier": "100000",
+			"CompanyCode": "0001",
+			"PaymentBlockingReason": "",
+			"PaymentMethodsList": "T",
+			"PaymentTerms": "0001",
+			"ClearCustomerSupplier": false,
+			"HouseBank": "",
+			"ReconciliationAccount": "160000",
+			"SupplierIsBlockedForPosting": false,
+			"DeletionIndicator": false
+		}
+	],
+	"time": "2022-09-22T18:05:59+09:00"
+}

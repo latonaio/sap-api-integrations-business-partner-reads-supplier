@@ -1,0 +1,14 @@
+{
+	"cursor": "/Users/latona2/bitbucket/sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller/caller.go#L271",
+	"function": "sap-api-integrations-business-partner-reads-supplier/SAP_API_Caller.(*SAPAPICaller).Role",
+	"level": "INFO",
+	"message": [
+		{
+			"BusinessPartner": "111",
+			"BusinessPartnerRole": "FLVN01",
+			"ValidFrom": "2022-09-15",
+			"ValidTo": "9999-12-31"
+		}
+	],
+	"time": "2022-09-22T17:36:54+09:00"
+}

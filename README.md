@@ -69,9 +69,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 ここでは、"Supplier" が指定されています。
 
 ```
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
-	"accepter": ["Supplier"],
-	"business_partner_code": "1018",
+	"api_schema": "SAPBusinessPartnerSupplierReads",
+	"accepter": ["General"],
+	"business_partner_code": "111",
 	"deleted": false
 ```
   
@@ -80,9 +80,9 @@ accepter において 下記の例のように、データの種別（＝APIの�
 全データを取得する場合、sample.json は以下のように記載します。  
 
 ```
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerSupplierReads",
 	"accepter": ["All"],
-	"business_partner_code": "1018",
+	"business_partner_code": "111",
 	"deleted": false
 ```
 
@@ -147,8 +147,8 @@ func (c *SAPAPICaller) AsyncGetBPSupplier(businessPartner, businessPartnerRole, 
 }
 ```
 ## Output  
-本マイクロサービスでは、[golang-logging-library](https://github.com/latonaio/golang-logging-library) により、以下のようなデータがJSON形式で出力されます。  
-以下の sample.json の例は、SAP ビジネスパートナ仕入先 の ヘッダデータ が取得された結果の JSON の例です。  
+本マイクロサービスでは、[golang-logging-library-for-sap](https://github.com/latonaio/golang-logging-library-for-sap) により、以下のようなデータがJSON形式で出力されます。  
+以下の sample.json の例は、SAP ビジネスパートナ仕入先 の 一般データ が取得された結果の JSON の例です。  
 以下の項目のうち、"Supplier" ～ "to_SupplierCompany" は、/SAP_API_Output_Formatter/type.go 内 の Type Supplier {} による出力結果です。"cursor" ～ "time"は、golang-logging-library による 定型フォーマットの出力結果です。  
 
 ```

@@ -12,7 +12,7 @@
 		"BusinessPartnerCategory": "",
 		"BusinessPartnerFullName": "",
 		"BusinessPartnerGrouping": "",
-		"BusinessPartnerName": "Kriek",
+		"BusinessPartnerName": "Test",
 		"CorrespondenceLanguage": "",
 		"CreationDate": "",
 		"CreationTime": "",
@@ -139,7 +139,7 @@
 			"DeletionIndicator": null
 		}
 	},
-	"api_schema": "sap.s4.beh.businesspartner.v1.BusinessPartner.Created.v1",
+	"api_schema": "SAPBusinessPartnerSupplierReads",
 	"accepter": ["BPName"],
 	"business_partner_code": "",
 	"deleted": false
